@@ -8,7 +8,11 @@ export default function Home() {
     <div className={styles.container}>
       <h1>Netflix App</h1>
       <Navbar />
-      <Banner />
+      <Banner
+        title="Clifford the red dog"
+        subTitle="a very cute dog"
+        imgUrl="/static/clifford.webp"
+      />
       <Card />
     </div>
   );
