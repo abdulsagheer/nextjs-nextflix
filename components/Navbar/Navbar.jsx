@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styles from "./navbar.module.css";
-
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
@@ -26,7 +25,6 @@ const NavBar = (props) => {
     e.preventDefault();
     setShowDropdown(!showDropdown);
   };
-  console.log(showDropdown);
 
   return (
     <div className={styles.container}>
