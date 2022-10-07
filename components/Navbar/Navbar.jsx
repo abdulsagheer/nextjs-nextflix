@@ -26,6 +26,7 @@ const NavBar = (props) => {
     e.preventDefault();
     setShowDropdown(!showDropdown);
   };
+  console.log(showDropdown);
 
   return (
     <div className={styles.container}>
