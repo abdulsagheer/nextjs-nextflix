@@ -3,7 +3,7 @@ import Banner from "../components/Banner/Banner";
 import SectionCard from "../components/Card/SectionCard/SectionCard";
 import Navbar from "../components/Navbar/Navbar";
 import styles from "../styles/Home.module.css";
-
+import { magic } from "../lib/magic-client";
 import { getPopularVideos, getVideos } from "../lib/videos";
 
 export async function getServerSideProps(context) {
@@ -25,7 +25,7 @@ export default function Home({
   productivityVideos,
   popularVideos,
 }) {
-  console.log({ disneyVideos });
+  console.log({ magic });
   return (
     <div className={styles.container}>
       <Head>
