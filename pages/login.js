@@ -29,7 +29,7 @@ const login = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Netflix SignIn</title>
+        <title>Netflix | SignIn</title>
       </Head>
 
       <header className={styles.header}>
