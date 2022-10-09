@@ -3,10 +3,12 @@ import Head from "next/head";
 import styles from "../styles/login.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const login = () => {
   const [email, setEmail] = useState("");
   const [userMsg, setUserMsg] = useState("");
+  const router = useRouter();
   const handleOnChangeEmail = (e) => {
     setUserMsg("");
     console.log("event", e.target.value);
@@ -19,7 +21,12 @@ const login = () => {
     e.preventDefault();
 
     if (email) {
-      // route to dashboard
+      if (email === "abdulsagheeras29@gmail.com") {
+        // route to dashboard
+        router.push("/");
+      } else {
+        console.log("Something went wrong logging in");
+      }
     } else {
       // show user message
       setUserMsg("Enter a valid email address");
