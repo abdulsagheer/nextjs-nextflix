@@ -24,7 +24,6 @@ const Video = () => {
           src={`https://www.youtube.com/embed/${router.query.videoId}?autoplay=0&origin=http://example.com&controls=0&rel=1`}
           frameBorder="0"
         ></iframe>
-        <div>Modal body</div>
       </Modal>
     </div>
   );
