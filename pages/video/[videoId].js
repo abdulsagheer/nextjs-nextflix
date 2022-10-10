@@ -8,8 +8,6 @@ import Navbar from "../../components/Navbar/Navbar";
 Modal.setAppElement("#__next");
 
 export async function getStaticProps(context) {
-  console.log({ context });
-
   const videoId = context.params.videoId;
 
   const videoArray = await getYoutubeVideoById(videoId);
