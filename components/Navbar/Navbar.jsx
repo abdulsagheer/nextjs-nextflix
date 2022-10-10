@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { magic } from "../../lib/magic-client";
 
-const NavBar = () => {
+const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [username, setUsername] = useState("");
   const router = useRouter();
@@ -104,4 +104,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;
