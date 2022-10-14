@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { magic } from "../lib/magic-client";
 
-const login = () => {
+const Login = () => {
   const [email, setEmail] = useState("");
   const [userMsg, setUserMsg] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -110,4 +110,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;
